@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Stream Example 1</title>
+<!-- <link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" /> -->
+<link rel="stylesheet" type="text/css" href="css/dcsns_dark.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="inc/js/jquery.plugins.js"></script> -->
+<!-- <script type="text/javascript" src="inc/js/jquery.site.js"></script> -->
+<script type="text/javascript" src="js/jquery.social.stream.1.5.18.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('#social-stream').dcSocialStream({
+		feeds: {
+			twitter: {
+				id: 'pankajgupta20de'
+			},
+			facebook: {
+				id: '1429222867344487',
+				feed: 'feed'
+			}
+			},
+		twitterId: '2411381498',
+		iconPath: 'images/dcsns-dark/',
+		imagePath: 'images/dcsns-dark/',
+		limit: 20,
+		days: 25
+	});
+});
+</script>		
+
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+ 
+
+	<div id="social-stream"></div>
+
+
+</div>
+
+<!-- End Wrapper -->
+</body>
+</html>
